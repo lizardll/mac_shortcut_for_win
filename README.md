@@ -7,3 +7,8 @@ Support basic mac keyboard shortcut on windows, including command+tab/c/v/x/s/z/
 
 [Download](https://github.com/lizardll/mac_shortcut_for_win/releases/download/publish/mac_shortcut.exe)
 
+# Usage
+
+Double click exe, and you will have an AHK running in progam tray. Then try win+c/v to copy/paste!
+
+双击exe，在任务栏可以看到运行的AHK实例。然后试试windows+c/v复制粘贴吧！
