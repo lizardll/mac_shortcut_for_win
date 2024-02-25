@@ -11,15 +11,18 @@ LWin & Tab::AltTab
 #h::Send "^h"
 #+t::Send "^+t"
 #r::Send "^r"
-!c::
+!h::Send "#{h}"
+; alt+c for clipboard history
+!c::{
   Send "{LWin Down}"
   Sleep 100
   Send "v"
   Send "{LWin Up}"
   return
-!h::Send "#{h}"
+}
 
-CapsLock::
+
+CapsLock::{
     ; Start a timer
     keyWaitTimer := A_TickCount
     ; Wait for Caps Lock to be released
@@ -36,3 +39,4 @@ CapsLock::
         SetCapsLockState(GetKeyState('CapsLock', 'T') ? 'Off' : 'On')
     }
 return
+}
